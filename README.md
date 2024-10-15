@@ -4,13 +4,13 @@ This project implements a pizza order management system using Python. The system
 Features
 1. Pizza (Base Class)
 Represents the common attributes for all pizzas.
-Attributes:
-size: Size of the pizza (S, M, L).
-price: Initial price (starts at 0.0).
+  Attributes:
+    size: Size of the pizza (S, M, L).
+    price: Initial price (starts at 0.0).
 Methods:
 getPrice(), setPrice(): Access and modify price.
 getSize(), setSize(): Access and modify size.
-2. CustomPizza (Inherits from Pizza)
+3. CustomPizza (Inherits from Pizza)
 Allows customers to add their own toppings.
 Attributes:
 toppings: A list of toppings.
@@ -20,13 +20,13 @@ Additional charge per topping.
 Methods:
 addTopping(topping): Adds a topping and updates the price.
 getPizzaDetails(): Returns a formatted string with the pizza's size, toppings, and price.
-3. SpecialtyPizza (Inherits from Pizza)
+4. SpecialtyPizza (Inherits from Pizza)
 Pre-configured pizzas with a fixed price based on size.
 Attributes:
 name: Name of the specialty pizza.
 Methods:
 getPizzaDetails(): Returns a formatted string with the pizza's size, name, and price.
-4. PizzaOrder
+5. PizzaOrder
 Represents a collection of pizzas ordered by a customer.
 Attributes:
 pizzas: A list of Pizza objects (Custom or Specialty).
@@ -34,7 +34,7 @@ time: Expected time of pickup (24-hour format).
 Methods:
 addPizza(pizza): Adds a Pizza object to the order.
 getOrderDescription(): Constructs a detailed description of the order, including individual pizza details and total price.
-5. OrderQueue (MinHeap-based Priority Queue)
+6. OrderQueue (MinHeap-based Priority Queue)
 Manages pizza orders based on expected pickup time.
 Attributes:
 heap: A MinHeap storing PizzaOrder objects.
