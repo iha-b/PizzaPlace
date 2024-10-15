@@ -4,9 +4,12 @@ This project implements a pizza order management system using Python. The system
 Features
 1. Pizza (Base Class)
 Represents the common attributes for all pizzas.
-  Attributes:
-    size: Size of the pizza (S, M, L).
-    price: Initial price (starts at 0.0).
+
+Attributes:
+  
+size: Size of the pizza (S, M, L).
+    
+price: Initial price (starts at 0.0).
 Methods:
 getPrice(), setPrice(): Access and modify price.
 getSize(), setSize(): Access and modify size.
