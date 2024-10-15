@@ -1,4 +1,4 @@
-# Pizza Order Management System
+# Pizza Place
 
 This project implements a pizza order management system using Python. The system includes customizable pizzas, specialty pizzas, and an order queue to manage multiple orders based on their expected pickup time. The project follows object-oriented programming principles, with clear class hierarchies and pytest tests.
 
